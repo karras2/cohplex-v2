@@ -1,22 +1,22 @@
-.showDiv {
+.showDiv{
   opacity: 1;
   top: 50%;
   left: 50%;
 }
-.hideDiv {
+.hideDiv{
   top: 45%;
   left: 50%;
   opacity: 0;
   pointer-events: none;
 }
-#leadeBox {
+#leadeBox{
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   width: 48%;
-  transition: 0.5s;
+  transition: .5s;
   overflow: hidden;
 }
-#leadeBox h1 {
+#leadeBox h1{
   line-height: 15px;
   text-align: left;
   font-size: 1.2em;
@@ -24,12 +24,12 @@
   padding-left: 10px;
   color: #dde;
 }
-.leadZone {
+.leadZone{
   height: 450px;
   overflow-y: auto;
 }
 
-.leader {
+.leader{
   text-align: right;
   font-size: 1em;
   font-weight: 700;
@@ -38,37 +38,37 @@
   background: #eeeef6;
   line-height: 60px;
 }
-.leader:nth-child(2n + 0) {
+.leader:nth-child(2n+0) {
   background-color: white;
 }
-.leader .pos {
+.leader .pos{
   float: left;
   width: 40px;
   font-size: 1.3em;
   opacity: 0.5;
 }
-.leader .name {
+.leader .name{
   text-align: left;
   float: left;
   width: calc(36% - 40px);
   font-size: 1.1em;
 }
-.leader div {
+.leader div{
   text-align: center;
   display: inline-block;
   width: 16%;
   overflow: hidden;
   white-space: nowrap;
 }
-.leaderinfo {
+.leaderinfo{
   line-height: 15px;
   text-align: right;
-  font-size: 0.85em;
+  font-size: .85em;
   height: 15px;
-  opacity: 0.6;
+  opacity: .6;
   width: calc(100% - 10px);
 }
-.leader .isMe {
+.leader .isMe{
   color: #5b7bdb;
 }
 
