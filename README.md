@@ -1,28 +1,44 @@
 # Obstar.io/Korexk.io server
+
 This is the original Obstar source code.
-The game still need a lot of work and love, I could help a little bit if some of you are planning on remaking a serious version of it.
+The game still needs a lot of work and love, I could help a little bit if some of you are planning on remaking a serious version of it.
+
 ## Prerequisites
-Run on nodejs 10 an above;
-All the dependencies are in package.json.
+
+Run on nodejs 10 and above;
+all the dependencies are in package.json.
+
 ## Things you need to know
-The game could still be optimized. Also, the code is not clean, so it might be hard to understad what's happening. Again, if you are planning on working on it seriously, i could help a little bit.
+
+The game could still be optimized. Also, the code is not clean, so it might be hard to understand what's happening. Again, if you are planning on working on it seriously, i could help a little bit.
+
 ###
-There is two main server files, ```obstarWeb.js``` and ```Alex.js```
-ObstarWeb.js is the web server, its handling the http request, the html/css/js files and the shop/leaderboad/accounts databases.
+
+There is two main server files, `obstarWeb.js` and `Alex.js`
+obstarWeb.js is the web server, its handling the http request, the html/css/js files and the shop/leaderboad/accounts databases.
 Alex.js is the actual game.
+
 ###
-it's possible to put the web server, the game server and the mysql server on different machines.
-The files /lib/AlexMysql.js, /lib/webMysql.js, are both the config for to the mysql databse connection, and the file /public/share/ws_link.js is the link to the game server. (they are all set to localhost);
+
+It's possible to put the web server, the game server and the mysql server on different machines.
+The files /lib/AlexMysql.js, /lib/webMysql.js, are both the config for the MySQL database connection, and the file /public/share/ws_link.js is the link to the game server. (they are all set to localhost);
+
 ## Mysql Database
-To work, obstar needs a mysql database with the following tables:
+
+To work, Obstar needs a mysql database with the following tables:
+
 ###
-Create statement for the database 
+
+Create statement for the database:
+
 ```
 CREATE DATABASE `users` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 ```
-Then, you have to use the database users: ```use users```
+
+Then, you have to use the database users: `use users`
 
 Create statement for the accounts table :
+
 ```
 CREATE TABLE `acc` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
@@ -38,6 +54,7 @@ CREATE TABLE `acc` (
 ```
 
 Create statement for the shops :
+
 ```
 CREATE TABLE `shop` (
   `id` int(11) NOT NULL,
@@ -49,6 +66,7 @@ CREATE TABLE `shop` (
 ```
 
 Create statement for the leaderboard table :
+
 ```
 CREATE TABLE `wrs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -61,12 +79,15 @@ CREATE TABLE `wrs` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=126 DEFAULT CHARSET=utf8;
 ```
-For the leaderboard to work, you need to insert at least one row: 
+
+For the leaderboard to work, you need to insert at least one row:
+
 ```
 insert into wrs value(NULL,'unnamed',0,'Basic','ffa',NULL,NOW());
 ```
 
 Create statement for the dev-token table :
+
 ```
 CREATE TABLE `devs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
