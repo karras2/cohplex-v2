@@ -37,7 +37,7 @@ CREATE DATABASE `users` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT 
 
 Then, you have to use the database users: `use users`
 
-Create statement for the accounts table :
+Create statement for the accounts table:
 
 ```
 CREATE TABLE `acc` (
@@ -53,7 +53,7 @@ CREATE TABLE `acc` (
 ) ENGINE=InnoDB AUTO_INCREMENT=146 DEFAULT CHARSET=utf16;
 ```
 
-Create statement for the shops :
+Create statement for the shops:
 
 ```
 CREATE TABLE `shop` (
@@ -65,7 +65,7 @@ CREATE TABLE `shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
-Create statement for the leaderboard table :
+Create statement for the leaderboard table:
 
 ```
 CREATE TABLE `wrs` (
@@ -86,7 +86,7 @@ For the leaderboard to work, you need to insert at least one row:
 insert into wrs value(NULL,'unnamed',0,'Basic','ffa',NULL,NOW());
 ```
 
-Create statement for the dev-token table :
+Create statement for the dev-token table:
 
 ```
 CREATE TABLE `devs` (
