@@ -1,1 +1,1 @@
-window.WS_LINK = 'http://obstar-template.glitch.me/Alex.js';
+window.WS_LINK = 'ws://localhost:8080';
