@@ -1,6 +1,7 @@
 {
     "name": "obstar-server-test",
     "version": "0.1.0",
+  "scripts": { "start": "node patch.js" },
     "dependencies": {
         "cookie-parser": "~1.4.4",
         "victor":"~1.1",
