@@ -1,18 +1,21 @@
 {
-  "name": "obstar-server-test",
-  "version": "0.1.0",
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+
+  "name": "my-glitch-app",
+  "version": "0.0.1",
+  "description": "What am I about?",
+  "main": "server.js",
   "scripts": {
-    "start": "node patch.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "victor": "~1.1",
-    "util": "~0.12.1",
-    "ws": "~7.2.3",
-    "mysql": "~2.17",
-    "express": "~4.17.1",
-    "express-ws": "~4.0.0",
-    "ejs": "~2.7.1",
-    "body-parser": "~1.19"
-  }
-}
+ "cookie-parser": "~1.4.4",
+        "victor":"~1.1",
+        "util":"~0.12.1",
+        "ws":"~7.2.3",
+        "mysql":"~2.17",
+        "express":"~4.17.1",
+        "ejs":"~2.7.1",
+        "body-parser":"~1.19"
